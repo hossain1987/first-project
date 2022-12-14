@@ -3,17 +3,31 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+   max-width: 1200px;
+   width:90%;
+    margin: auto;
+}
+h1{
+    color: aqua;
+}
 header .logo{
     color: red;
     margin: 5px 10px ;
 }
-.navbar{
-    border: 2px solid red;
+.navbar-container{
+    /* border: 2px solid red; */
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    background-color: aqua;
+    /* background-color: aqua; */
+   
 
+}
+.navbar{
+    box-shadow: 0 2px 2px  rgba(0,0,0,.2 );
 }
 
 .nav-items{
