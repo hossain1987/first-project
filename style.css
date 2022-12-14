@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header .logo{
+    color: red;
+    margin: 5px 10px ;
+}
+.navbar{
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aqua;
+
+}
+
+.nav-items{
+    display: flex;
+    
+}
+.nav-items li {
+    list-style: none;
+    text-decoration: none;
+    margin: 10px 10px;
+
+
+}
+.nav-items a{
+    text-decoration: none;
+    padding: 4px 4px;
+}
