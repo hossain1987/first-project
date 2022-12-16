@@ -6,16 +6,25 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
+/* #######utility classes########## */
 .container{
    max-width: 1200px;
    width:90%;
     margin: auto;
 }
-h1{
-    color: aqua;
+.btn{
+    background-color: green;
+    color: aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
 }
+
+/* ########   navbar styling  ####### */
 header .logo{
-    color: red;
+    color: green;
     margin: 5px 10px ;
 }
 .navbar-container{
@@ -28,6 +37,11 @@ header .logo{
 }
 .navbar{
     box-shadow: 0 2px 2px  rgba(0,0,0,.2 );
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background-color: antiquewhite;
+    opacity: .8;
 }
 
 .nav-items{
@@ -37,11 +51,44 @@ header .logo{
 .nav-items li {
     list-style: none;
     text-decoration: none;
-    margin: 10px 10px;
+    margin: 15px 2px;
 
 
 }
 .nav-items a{
     text-decoration: none;
     padding: 4px 4px;
+    background-color: green;
+    border-radius: 5px;
+    color: aliceblue;
 }
+.nav-items a:hover{
+    color: green;
+}
+
+
+/* ####### showcase styling ####### */
+.showcase-container{
+    background:url(./img/pexels-ella-olsson-1640777.jpg);
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display:flex;
+    align-items: center;
+    justify-content: center;flex-direction: column;
+    text-align: center;
+}
+.showcase-header{
+    text-transform: uppercase;
+    font-weight: 800;
+    color: green;
+}
+.showcase-header a{
+    font-weight: 600;
+}
+.showcase-container .btn{
+    margin-top: 10px;
+}
+
+
