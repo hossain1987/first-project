@@ -10,6 +10,10 @@ html{
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
+
+a{
+    text-decoration: none;
+}
 /* #######utility classes########## */
 .container{
    max-width: 1200px;
@@ -18,13 +22,23 @@ body{
 }
 .btn{
     color: aliceblue;
-    padding: 1rem;
+    display: block;
+    padding: 1.2rem;
     border-radius: 10px;
     text-decoration: none;
     text-transform: uppercase;
-    font-weight: 600;
-    font-size: 1.5rem;
+    font-weight: 800;
+    font-size: 1.3rem;
     cursor: pointer;
+}
+.btn2{
+    display: block;
+    padding: .5rem;
+    border-radius: 10px;
+    color: aliceblue;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 .btn-primary{
     background-color: green;
@@ -81,7 +95,7 @@ header .logo{
 
 /* ####### showcase styling ####### */
 .showcase-container{
-    background:url(./img/pexels-ella-olsson-1640777.jpg);
+    background:linear-gradient(rgba(255, 255, 255, 0.26),rgba(244, 244, 244, 0.253)),url(./img/pexels-ella-olsson-1640777.jpg);
     height: 50vh;
     background-position: center;
     background-size: cover;
@@ -98,7 +112,7 @@ header .logo{
     font-size: 2.5rem;
 }
 .showcase-container p{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
 .showcase-header a{
     font-weight: 600;
@@ -158,3 +172,67 @@ header .logo{
     100%{
         transform:translate(0)
     }
+}    
+/* ###### Food container styling ######*/
+.food .food-title{
+    margin: auto;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+
+}
+.food-type{
+    display: flex;
+   
+}
+.food-type{
+    display: flex;
+    justify-content: center;
+}
+.img-box{
+    width: 300px;
+    margin: 1rem;
+    position: relative;
+  
+}
+.img-box::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: rgba(0,0,0,.600);
+    z-index: 1;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
+.img-box:hover::after{
+    opacity:1;
+}
+
+.img-box .img-content{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    text-align: center;
+    z-index: 2;
+    color: aliceblue;
+    transition: all .3s ease-in-out;
+}
+.img-content h2{
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+.img-box:hover .img-content{
+   opacity:1;
+   left: 50%;
+}
+.img-box img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
