@@ -270,3 +270,49 @@ header .logo{
     margin: auto;
     padding: 1em;
 }
+/* ######## testimonial styling ############ */
+.testimonial-header{
+    text-align: center;
+}
+.testimonial-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+.testimonial-box{
+    text-align: center;
+    padding: 1rem;
+}
+.star-rating{
+    padding: 1rem;
+    
+}
+.tesimonial-text{
+    text-align: center;
+    padding: 2rem;
+
+}
+.customer-img-box {
+    margin: auto;
+}
+.customer-img-box img{
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 1rem;
+    margin: auto;
+
+}
+.testimonial-box .checked{
+    color: goldenrod;
+
+}
+.customer-name{
+    text-align: center;
+    font-weight: 700;
+  
+}
