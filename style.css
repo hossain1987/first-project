@@ -22,7 +22,7 @@ a{
 }
 .btn{
     color: aliceblue;
-    display: block;
+    display: inline-block;
     padding: 1.2rem;
     border-radius: 10px;
     text-decoration: none;
@@ -174,7 +174,7 @@ header .logo{
     }
 }    
 /* ###### Food container styling ######*/
-.food .food-title{
+#food .food-title{
     margin: auto;
     text-align: center;
     font-size: 2rem;
@@ -273,6 +273,8 @@ header .logo{
 /* ######## testimonial styling ############ */
 .testimonial-header{
     text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
 }
 .testimonial-container{
     display: flex;
@@ -316,3 +318,53 @@ header .logo{
     font-weight: 700;
   
 }
+/* ########## contact us styling################# */
+.contact-container{
+    display: flex; 
+    padding: 2rem;
+    justify-content: center;
+}
+.contact-us-header{
+    text-align: start;
+   
+}
+ .form-container{
+    width: 50%;
+    padding: 1rem;
+}
+ .form-container input{
+  display: block;
+  padding: 1rem 0;
+  margin: 1rem 0;
+  width: 500px;
+  border: none;
+  border-bottom: 2px solid black;
+  width: 100%;
+  margin-bottom: 1rem;
+
+   
+}
+.form-container textarea{
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid black;
+    margin-bottom: 1rem;
+} 
+ .contact-img {
+    width: 50%;
+    height: 100%;
+
+}
+.contact-img img{
+    width: 100%;
+} 
+/* ######### Footer section styling############# */
+
+#footer h2{
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 2em;
+    font-weight: 500;
+    background: green;
+}
+
